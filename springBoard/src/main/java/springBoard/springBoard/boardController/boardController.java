@@ -1,39 +1,46 @@
-package com.example.firstProject.controller;
+package springBoard.springBoard.boardController;
 
-import com.example.firstProject.dto.ArticleForm;
-import com.example.firstProject.entity.Article;
-import com.example.firstProject.repository.ArticleRepository;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import springBoard.springBoard.domain.board.BoardDateBase;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
+import springBoard.springBoard.domain.board.BoardCreateRequestDto;
 import springBoard.springBoard.domain.board.BoardRepository;
+import springBoard.springBoard.domain.board.BoardService;
+import springBoard.springBoard.domain.board.BoardUpdateRequestDto;
 
-@Controller
-public class boardController
+@RequiredArgsConstructor
+@RestController
+public class BoardController
 {
+    public BoardRepository boardRepository;
 
-    private BoardRepository boardRepository;
+    private final BoardService boardService;
 
+/*
     @GetMapping("/boardPage/mainPage")
     public String mainPage()
     {
         return "/boardPage/mainPage";
     }
+*/
 
-    @PostMapping
-    public String mainPageForm(BoardDateBase boardForm)
+    // board테이블 전체조회(목록)
+    @PostMapping("/board")
+    public Long Create(@RequestBody BoardCreateRequestDto requestDto)
     {
-        System.out.println(boardForm.toSpring);
+        return boardService.create(requestDto);
 
-        // Dto를 변환
-        BoardDateBase board = boardForm.toEntity();
-        System.out.println(boardForm);
+    }
 
-        // Repository에게 Entity를 DB안에 저장
-        BoardDateBase boardsave = boardRepository.save(boardForm);
-        System.out.println(board);
+    // board테이블 개별조회
+    @PutMapping("/board/{id}")
+    public Long update(@PathVariable Long id, @RequestBody BoardUpdateRequestDto requestDto) {
+        return boardService.update(id, requestDto);
+    }
 
-        return "";
+    @DeleteMapping("/board/{id}")
+    public void delete(@PathVariable Long id)
+    {
+        boardService.delete(id);
     }
 }
