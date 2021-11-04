@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4175c992-aff2-46ff-b68e-a5d2c25dd4cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/board/BoardCreateRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/board/BoardListResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/board/BoardResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/board/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/board/BoardUpdateRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/boardController/boardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/boardController/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/board/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/board/BoardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springBoard/src/main/java/springBoard/springBoard/domain/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBoard/src/main/resources/templates/boardPage/write_page.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/springBoard/src/main/resources/templates/boardPage/write_page.mustache" afterDir="false" />
-    </list>
+    <list default="true" id="4175c992-aff2-46ff-b68e-a5d2c25dd4cb" name="Changes" comment="2021/11/04 Pm 10:37 commit BoardService안에 BoardResponseDto ,  List&lt;BoardListResponseDto&gt;안에 오류" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +36,9 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -113,6 +102,28 @@
       <option name="presentableId" value="Default" />
       <updated>1635907518639</updated>
     </task>
+    <task id="LOCAL-00001" summary="2021/11/04 Pm 10:37 commit BoardService안에 BoardResponseDto ,  List&lt;BoardListResponseDto&gt;안에 오류">
+      <created>1636033092070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636033092070</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2021/11/04 Pm 10:37 commit BoardService안에 BoardResponseDto ,  List&lt;BoardListResponseDto&gt;안에 오류">
+      <created>1636033216917</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636033216917</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2021/11/04 Pm 10:37 commit BoardService안에 BoardResponseDto ,  List&lt;BoardListResponseDto&gt;안에 오류">
+      <created>1636033286956</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636033286956</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,5 +137,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2021/11/04 Pm 10:37 commit BoardService안에 BoardResponseDto ,  List&lt;BoardListResponseDto&gt;안에 오류" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021/11/04 Pm 10:37 commit BoardService안에 BoardResponseDto ,  List&lt;BoardListResponseDto&gt;안에 오류" />
   </component>
 </project>
